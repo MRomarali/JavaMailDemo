@@ -20,9 +20,8 @@ public class JavaMailApi extends AsyncTask<Void, Void, Void> {
     private Session session;
     private String email, subject, message;
 
-    public JavaMailApi(Context context, Session session, String email, String subject, String message) {
+    public JavaMailApi(Context context, String email, String subject, String message) {
         this.context = context;
-        this.session = session;
         this.email = email;
         this.subject = subject;
         this.message = message;
